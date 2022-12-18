@@ -1,9 +1,7 @@
-import javax.imageio.ImageTranscoder;
-
 public class myFirstUtility {
 
 	/**
-	 * @param args
+	 * in the main method we declare an array of integer and pass it to a method that return the max number
 	 */
 	public static void main(String[] args) {
 
@@ -12,8 +10,8 @@ public class myFirstUtility {
       System.out.println("This is the Max number " + maxNumb);
 
 	}
-	
-	public static int maxNumber(int [] intrgerArr)
+	//Search from an array of integer and return the Max number
+	public static int maxNumber(int[] intrgerArr)
 	{
 	      int maxNumber = 0;
 	      for(int i=0;i<intrgerArr.length;i++)
@@ -23,5 +21,4 @@ public class myFirstUtility {
 	      }
 	      return maxNumber;
 	}
-
-}
+}//End of myFirstUtility
