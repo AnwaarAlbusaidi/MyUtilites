@@ -1,5 +1,3 @@
-import javax.imageio.ImageTranscoder;
-
 public class selectionSource {
 
 	/**
