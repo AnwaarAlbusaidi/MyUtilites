@@ -1,3 +1,5 @@
+import java.util.concurrent.TimeUnit;
+
 public class selectionSource {
 
 	/**
@@ -28,17 +30,17 @@ public class selectionSource {
 		}
 		// sort using bubble sort
 		System.out.println();
-		System.out.println("Array after swap");
+		System.out.println("Array after swap using Bubble sorting algorithm");
 		int swapArr[] = BubbleSorting(arr2);
-		for (int index = 0; index < arr2.length; index++) {
+		for (int index = 0; index < swapArr.length; index++) {
 			System.out.print(swapArr[index] + " ");
 		}
-
+		int[] arr3 = { 50, 12, 8, 10, 1001, 6, 87, 24 };
 		// sort using selection sort
 		System.out.println();
-		System.out.println("Array after swap");
-		int swapArr2[] = selectionSorting(arr2);
-		for (int index = 0; index < arr2.length; index++) {
+		System.out.println("Array after swap using Seclection sorting algorithm");
+		int swapArr2[] = selectionSorting(arr3);
+		for (int index = 0; index < swapArr2.length; index++) {
 			System.out.print(swapArr2[index] + " ");
 		}
 	}// end of main class
