@@ -14,7 +14,9 @@ public class hashMap1 {
      int [] arrOfInteger = new int [] {101,88,3,65,6,3,0,0,88,88};
      int count = 1;
      int num ;
-   //solve the problem using array
+     //solve the problem using array
+     System.out.println("solve the problem using array");
+     System.out.println("--------------------------------------------------------------");
      for (int outrIndex = 0 ; outrIndex <arrOfInteger.length ; outrIndex++ )
      {
     	 for (int innerIndex = 1 ; innerIndex <arrOfInteger.length ; innerIndex++ )
@@ -22,14 +24,18 @@ public class hashMap1 {
     		 if(arrOfInteger[outrIndex] == arrOfInteger[innerIndex])
     			 count += 1; 
     	 }
-    	 System.out.println( arrOfInteger[outrIndex] +" appeared " + count + " times."); 
-    	 System.out.println();
+    	 if(count > 1)
+    	 {
+    		 System.out.println( arrOfInteger[outrIndex] +" appeared " + count + " times."); 
+    		 System.out.println();
+    	 }
     	 count = 0;
      }
      
      System.out.println("--------------------------------------------------------------");
      //solve the problem using hash map
-     
+     System.out.println("solve the problem using hash map");
+     System.out.println("--------------------------------------------------------------");
      HashMap<Integer, Integer> repatedNum = new HashMap<Integer, Integer>();
      for (int index = 0 ;index < arrOfInteger.length ; index++ )
      {
