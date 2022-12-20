@@ -1,11 +1,12 @@
-import java.util.concurrent.TimeUnit;
 
-public class selectionSource {
+public class selectionAndBubbleSort {
 
 	/**
-	 * @param to swap values inside array written by : Anwaar Al-Busaidi
+	 * @param  to swap values inside array and sort array using selection And Bubble Sorting algorithm
+	 * written by : Anwaar Al-Busaidi
 	 */
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
 		int[] arr = { 4, 3, 2, 1 };
 		for (int index = 0; index < arr.length; index++) {
@@ -79,4 +80,4 @@ public class selectionSource {
 		return y;
 	}
 
-}// end of selectionSource class
+}
