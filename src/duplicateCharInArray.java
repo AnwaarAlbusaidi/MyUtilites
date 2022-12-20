@@ -45,7 +45,6 @@ public class duplicateCharInArray {
 				}
 			count = 1;
 		}
-		//return duplicateArr;
 	}
 	
 	public static void duplicateCharInArrayHaspMap(char[] y) {
