@@ -19,7 +19,6 @@ public class duplicateCharInArray {
 		char[] arr2 = new char[] { 'c', 'a', 'c', 't', 'r', 'a', 't', 'z' };
 		System.out.println("--------------------------------------------------------------");
 		System.out.println("solve the problem using Hash map");
-		System.out.println("--------------------------------------------------------------");
 		duplicateCharInArrayHaspMap(arr2);
 	}// End of main class
 

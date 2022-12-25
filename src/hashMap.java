@@ -11,36 +11,36 @@ public class hashMap {
 	//variable declaration
       Scanner scan = new Scanner(System.in);
       String userInput;
-//      int aCount = 0;
-//      int eCount = 0;
-//      int iCount = 0;
-//      int oCount = 0;
-//      int uCount = 0;
+      int aCount = 0;
+      int eCount = 0;
+      int iCount = 0;
+      int oCount = 0;
+      int uCount = 0;
       int vowelsCount = 0;
       
-//      System.out.println("Please Enter a sentence : ");
-//      userInput = scan.nextLine();
-//      
-//       for(int i = 0; i< userInput.length(); i++)
-//       {
-//    	   if(userInput.charAt(i) == 'a' || userInput.charAt(i) == 'A')
-//    		   aCount = aCount + 1;  
-//    	   else if (userInput.charAt(i) == 'i' ||  userInput.charAt(i) == 'I')  
-//    		   iCount = iCount + 1; 
-//    	   else if (userInput.charAt(i) == 'o'  ||  userInput.charAt(i) == 'O')
-//    		   oCount = oCount + 1; 
-//    	   else if(userInput.charAt(i) == 'u'||  userInput.charAt(i) == 'U')
-//    		   uCount = uCount + 1; 
-//    	   else if(userInput.charAt(i) == 'e' ||  userInput.charAt(i) == 'E')
-//    		   eCount = eCount + 1; 
-//       }
-//       vowelsCount =  aCount + eCount +iCount + uCount+ oCount;
-//       System.out.println("Number of vowels  : " + vowelsCount);
-//       System.out.println("a is present  : " + aCount  + " times.");
-//       System.out.println("i is present  : " + iCount  + " times.");
-//       System.out.println("o is present  : " + oCount  + " times.");
-//       System.out.println("u is present  : " + uCount  + " times.");
-//       System.out.println("e is present  : " + eCount  + " times.");
+      System.out.println("Please Enter a sentence : ");
+      userInput = scan.nextLine();
+      
+       for(int i = 0; i< userInput.length(); i++)
+       {
+    	   if(userInput.charAt(i) == 'a' || userInput.charAt(i) == 'A')
+    		   aCount = aCount + 1;  
+    	   else if (userInput.charAt(i) == 'i' ||  userInput.charAt(i) == 'I')  
+    		   iCount = iCount + 1; 
+    	   else if (userInput.charAt(i) == 'o'  ||  userInput.charAt(i) == 'O')
+    		   oCount = oCount + 1; 
+    	   else if(userInput.charAt(i) == 'u'||  userInput.charAt(i) == 'U')
+    		   uCount = uCount + 1; 
+    	   else if(userInput.charAt(i) == 'e' ||  userInput.charAt(i) == 'E')
+    		   eCount = eCount + 1; 
+       }
+       vowelsCount =  aCount + eCount +iCount + uCount+ oCount;
+       System.out.println("Number of vowels  : " + vowelsCount);
+       System.out.println("a is present  : " + aCount  + " times.");
+       System.out.println("i is present  : " + iCount  + " times.");
+       System.out.println("o is present  : " + oCount  + " times.");
+       System.out.println("u is present  : " + uCount  + " times.");
+       System.out.println("e is present  : " + eCount  + " times.");
        
        
        
@@ -53,6 +53,7 @@ public class hashMap {
        sentenceOfHashMap.put("uCount",0);
        sentenceOfHashMap.put("eCount",0);
        
+       vowelsCount = 0;
        System.out.println("Please Enter a sentence : ");
        userInput = scan.nextLine();
        
