@@ -35,7 +35,7 @@ public class MathFunction {
 	}
 	/**
 	 * This method will take an array of numbers and search for even or odd numbers the power number
-	 * @param x(array of integer numbers)
+	 * @param x(array of numbers)
 	 * @return a hash map with the even and odd number
 	 */
 	public static HashMap<String, ArrayList<Integer>>  evenOrOddNumber(int [] x)
