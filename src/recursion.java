@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
 public class recursion {
-
 	public static void main(String[] args) {
-
 		System.out.println("Power method using recursion");
 		int pow = powerMethodRecursion(2, 3);
 		System.out.println("result : " + pow);
