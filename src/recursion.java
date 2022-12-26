@@ -26,9 +26,8 @@ public class recursion {
 		System.out.println();
 		System.out.println("---------------------------------------------------");
 		System.out.println("Palindrome method using recursion");
-//	    String example = "madam";
-//	    isPalindrome(example , 0);
-
+	    System.out.println( "madam is Palindrome or not : " + isPalindrome("madam" , 0));
+	    System.out.println("something is Palindrome or not : " + isPalindrome("something" , 0));
 	}// End of main method
     
 	/**
@@ -82,7 +81,7 @@ public class recursion {
 			return;
 		else {
 			System.out.print(" " + (num));
-			number(num + 1, count--);
+			number(num + 1, count);
 			System.out.print(" " + (num));
 		}
 	}
@@ -109,7 +108,11 @@ public class recursion {
 	  * Input something // output false
 	  * @return true if the string is palindrome and false if the string is not palindrome
 	  */
-	public static boolean isPalindrome() {
-		return true;
+	public static boolean isPalindrome(String word, int index) {
+		if(index > word.length()/2) {
+			 return true;
+		 }
+		 return (word.charAt(index) == word.charAt(word.length()-(1+index)))&&
+				 isPalindrome(word,index+1);
 	}
 }// End of recursion class
