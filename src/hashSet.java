@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 public class hashSet {
 	public static void main(String[] args) {
@@ -20,44 +22,11 @@ public class hashSet {
 		System.out.println();
 		System.out.println("---------------------------------------------------------");
 		System.out.println("remove duplicate using hash set");
-		HashSet<String> noDuplicate = new HashSet<String>();
-		
-		noDuplicate.add("Mr A");
-		noDuplicate.add("Mr B");
-		noDuplicate.add("Mr A");
-		noDuplicate.add("Mr C");
-		noDuplicate.add("Mr A");
-		noDuplicate.add("Mr D");
-		noDuplicate.add("Mr B");
-		noDuplicate.add("Mr C");
+		//using constructor for the hash set 
+		Set<String> noDuplicate = new HashSet<String>( Arrays.asList(myarr) );
         // Duplicate elements are not printed in a set.
         System.out.println(noDuplicate);
-        System.out.println("---------------------------------------------------------");
-        System.out.println("Disply which employees work for both of the restaurants using hashSet");
         
-        /*
-         * Given the names of people working in 2 different restaurants. Figure out which 
-         * employees work for both of the restaurants.
-         * */
-        HashSet<String> restaurants1 = new HashSet<String>();
-        HashSet<String> restaurants2 = new HashSet<String>();
-        
-        restaurants1.add("Mr A");
-        restaurants1.add("Mr B");
-        restaurants1.add("Mr C");
-        restaurants1.add("Mr Y");
-        restaurants1.add("Mr E");
-        
-        restaurants2.add("Mr X");
-        restaurants2.add("Mr Z");
-        restaurants2.add("Mr B");
-        restaurants2.add("Mr A");
-        restaurants2.add("Mr Y");
-        restaurants2.add("Mr S");
-        restaurants2.add("Mr T");
-        
-        restaurants2.retainAll(restaurants1);
-        System.out.println(restaurants2);
         System.out.println("---------------------------------------------------------");
         System.out.println("Disply which employees work for both of the restaurants using ArrrayList");
 
@@ -75,6 +44,21 @@ public class hashSet {
 	
 		for (int i = 0;i < worker.size(); i++) 
 			System.out.print(worker.get(i)+ ",");
+		
+		System.out.println();
+        System.out.println("---------------------------------------------------------");
+        System.out.println("Disply which employees work for both of the restaurants using hash Set");
+        
+        /*
+         * Given the names of people working in 2 different restaurants. Figure out which 
+         * employees work for both of the restaurants.
+         * */
+          Set<String> restaurants1 = new HashSet<String>( Arrays.asList(res1) );
+          Set<String> restaurants2 = new HashSet<String>( Arrays.asList(res2) );
+        
+        restaurants2.retainAll(restaurants1);
+        System.out.println(restaurants2);
+   
 		
 	}//End of main class
 
